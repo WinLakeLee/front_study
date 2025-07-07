@@ -1,0 +1,32 @@
+.float {
+  height: 200px;
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.box1 {
+
+}
+
+.box2{
+  border-right-color: pink;
+}
+
+.box3 {
+  float: right;
+}
+
+.box4 {
+  background-color: magenta;
+  margin: auto;
+}
+
+.container {
+  height: 200px;
+  border: 1px solid red;
+  overflow: auto;
+}
+

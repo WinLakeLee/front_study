@@ -1,0 +1,9 @@
+#first p {
+  color: red;
+}
+#second>p {
+  background-color: aqua;
+}
+p.inner {
+  color: blue;
+}

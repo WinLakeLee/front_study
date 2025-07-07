@@ -1,0 +1,24 @@
+ol {
+  list-style-type: upper-roman;
+}
+
+ul > li {
+  /* list-style-image: url("../../../static/images/pepe.jpg"); 크기조절 불가능 */
+  /* list-style-type: none;
+  background-image: url("../../../static/images/pepe.jpg");
+  background-repeat: no-repeat;
+  background-size: 5px;
+  background-position: left center;
+  margin: 0;
+  padding: 0 0 0 10px; */
+
+}
+
+ul {
+  list-style-position: inside;
+  list-style: square inside;
+}
+
+::marker {
+
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  form > input, select{
+    width: 500px;
+    height: 50px;
+  }
+  p > input.gender, .nationality{
+    width: 125px;
+    height: 50px;
+  }
+  form{
+    margin-top: 10%;
+    padding-left: 33%;
+  }
+</style>
+<body>
+  <form name="create">
+    <input type="text" placeholder="아이디"/><br>
+    <input type="password" placeholder="비밀번호"/><br>
+    <input type="email" placeholder="[선택] 이메일주소"/><br>
+    <input type="text" placeholder="이름"/><br>
+    <input type="text" placeholder="생년월일 8자리"/><br>
+    <select name="tele" id="tele"><br>
+      <option disabled hidden selected>통신사선택</option>
+      <option value="SKT">SKT</option>
+      <option value="KT">KT</option>
+      <option value="LGU+">LGU+</option>
+      <option value="알뜰폰">알뜰폰</option>
+    </select>
+    <p>    
+      <input class="gender" type="button" value="남자" name="man"/>
+      <input class="gender" type="button" value="여자" name="woman"/>
+      <input class="nationality" type="button" value="내국인" name="domestic"/>
+      <input class="nationality" type="button" value="외국인" name="foreign"/></p>
+    <input type="tel" placeholder="휴대전화번호" maxlength="16"/><br>
+    <p><input type="radio"><span style="color: green;">[필수]</span>인증 약관 전체동의</p>
+    <button >인증요청</button>
+  </form>
+</body>
+</html>

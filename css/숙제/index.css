@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: right;
+  font-size: 30px;
+}
+
+body {
+  width: 500px;
+  height: 900px;
+  background-color: yellow;
+}
+
+.main {
+  margin-top: 50%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.main > img{
+  border-radius: 50%;
+}
+
+footer {
+  transform: translate(22%);
+}
+
+.func {
+  float: left;
+  margin: 20px;
+}
+
+.func > img {
+  width: 30px;
+  height: 30px;
+}

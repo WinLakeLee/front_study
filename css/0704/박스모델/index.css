@@ -1,0 +1,23 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  border: 2px solid red;
+  border-radius: 50%;
+  border-bottom-right-radius: 10px;
+  border-style: dotted dashed groove solid;
+  border-top-color: blue;
+  border-bottom-width: 5px;
+  text-align: center;
+  /* 위 오른 아래 왼 */
+  /* 위 [왼, 오른] 아래 */
+  /* [위, 아래] [왼, 오른] */
+  padding: 5px;
+  margin: 10px;
+  width: 150px;
+  height: 60px;
+  box-shadow: inset 2px 4px 5px green;
+}

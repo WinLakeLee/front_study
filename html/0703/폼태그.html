@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--
+    Get
+    쿼리스트링 형태로 값을 전송
+    전송시에 데이터가 url에 드러남
+    전송 가능 용량이 제한됨
+  
+    Post
+    값을 요청 객체에 포함해 보냄
+    전송 보안을 유지할 수 있음
+    전송 가능 용량 제한이 없음
+    -->
+  <form action="https://www.google.com/search" method="get">
+    <input type="text" name="q"/>
+    <input type="submit" value="검색"/>
+  </form>
+
+  <form>
+    <input type="text" size="5" maxlength="5"
+           minlength="2" autofocus>
+    <input type="text" placeholder="아이디를 입력해라"><br>
+    <input type="text" value="홍길동" readonly><br>
+    <input type="text" value="홍길동" disabled><br>
+    <input type="text" required><br>
+
+    <input type="submit" value="전송">
+  </form>
+
+  <form>
+    텍스트 : <input type="text"><br>
+    비밀번호 : <input type="password"><br>
+    라디오버튼 : <input type="radio" name="yes-or-no" value="yes"> 예 
+                <input type="radio" name="yes-or-no" value="no" checked> 아니오
+    체크박스 : <input type="checkbox" name="chk" value="java"> Java
+              <input type="checkbox" name="chk" value="html" checked> HTML
+              <input type="checkbox" name="chk" value="css"> CSS <br>
+    <input id="agree" type="checkbox">
+    <label for="agree">약관동의</label>
+    
+    <br><br>
+    <input type="submit" value="전송">
+    <input type="reset" value="리셋">
+    <input type="button" value="버튼" onclick="alert('버튼을 눌렀네')">
+    <button>버튼2</button>
+
+    <input type="file">
+
+    <textarea rows="10" cols="40"></textarea>
+
+    <select name="color">
+      <option value="red">빨강</option>
+      <option value="blue" selected>파랑</option>
+      <option value="yellow">노랑</option>
+      <option value="green">초록</option>
+    </select>
+
+    <input type="hidden">
+
+    <input type="date">
+  </form>
+
+</body>
+</html>

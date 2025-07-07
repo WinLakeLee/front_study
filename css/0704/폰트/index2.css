@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: "Dokdo", system-ui;
+  font-weight: 400;
+  font-size: 36px;
+  font-style: normal;
+}

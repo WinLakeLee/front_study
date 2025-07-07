@@ -1,0 +1,21 @@
+.nav > li {
+  list-style-type: none;
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.nav {
+  background-color: aqua;
+  height: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+i.fa-solid {
+  font-size: 16px;
+  color: red;
+}
