@@ -1,0 +1,54 @@
+div > p:first-child {
+  color: red;
+}
+
+div > p:last-child {
+  color: blue;
+}
+
+/* 다른 태그가 중간에 있어도 제외된 순번으로 처리 */
+div > h3:nth-of-type(odd) {
+  color: red;
+}
+/* 다른 태그가 중간에 있으면 포함된 순번으로 처리 */
+div > h3:nth-child(even) {
+  color: blue;
+}
+
+#outer > h4:nth-child(5) {
+  color: red;
+}
+
+/* 기본 상태 - 페이지를 방문하지 않았을 때*/
+a:link {
+  color: aqua;
+}
+/* 해당 페이지를 방문하면 적용 */
+a:visited {
+  color: red;
+}
+/* 마우스 커서 올려두면 */
+a:hover {
+  color: blueviolet;
+}
+/* 마우스로 클릭했을 때 */
+a:active {
+  color:burlywood;
+}
+/* 포커스를 가졌을 때 */
+a:focus {
+  color: cornflowerblue
+}
+
+input:focus {
+  background-color: skyblue;
+}
+
+input::placeholder {
+  color: red;
+}
+
+p::selection {
+  color: #f0f0f0;
+  background-color: gray;
+}
