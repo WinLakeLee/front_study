@@ -1,0 +1,18 @@
+ul {
+  font-size: 0;
+}
+
+li {
+  font-size: medium;
+  width: 100px;
+  height: 200px;
+  border: 1px solid red;
+  display: inline-block;
+}
+
+ul .visi {
+  /* 숨김처리 해주지만 해당 영역은 남아있음 */
+  /* visibility: hidden; */
+  /* 숨김처리도 해주고 영역도 사라짐 */
+  display: none;
+}

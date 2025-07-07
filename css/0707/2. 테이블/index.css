@@ -1,0 +1,22 @@
+table {
+  width: 400px;
+  border: 1px solid red;
+  /* 칸 간격 조절 */
+  /* border-collapse: collapse; */
+  /* 너비 균등 조절 - table width 필수 */
+  table-layout: fixed;
+  /* 캡션 위치 조절 */
+  caption-side: bottom;
+  /* 빈 칸 없애기 */
+  empty-cells: hide;
+}
+
+td {
+  border: 1px solid red;
+}
+
+img {
+  width: 50px;
+  /* inline, 테이블 칸들에 수직정렬 */
+  vertical-align: middle;
+}

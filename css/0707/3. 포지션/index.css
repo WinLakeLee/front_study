@@ -1,0 +1,35 @@
+.rel {
+  /* static을 기준으로 상대적 배치 */
+  position: relative;
+  right: 100px;
+  bottom: 50px;
+}
+
+div{
+  border:1px solid red;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 200px;
+}
+
+.abs {
+  width: 100px;
+  height: 100px;
+  /* 부모 요소가 기준이 됨 */
+  /* 단 부모가 static이 아니여야 함 */
+  /* 만약 부모가 static이면 그 상위요소로 넘어가게 됨 */
+  position: absolute;
+  /* 한가운데 */
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  /* 맨 아래 중앙 */
+  /* right: 50%;
+  transform: translate(50%);
+  bottom: 0; */
+
+  /* 박스 맨 위 왼쪽 바깥 */
+  top: 0;
+  right: 100%;
+}
