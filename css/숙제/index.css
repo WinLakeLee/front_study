@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Dokdo", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 header {
@@ -11,8 +16,6 @@ header {
 }
 
 body {
-  width: 500px;
-  height: 800px;
   background-color: yellow;
 }
 
@@ -26,15 +29,11 @@ body {
 .main > img{
   border-radius: 50%;
 }
-
-footer {
-  transform: translate(10%);
-}
 .func {
   float: left;
   text-align: center;
-  margin: 20px;
   margin-top: 0px;
+  width: 25%;
 }
 
 .func > img {
