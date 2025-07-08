@@ -1,0 +1,84 @@
+.parant {
+  border: 1px solid red;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  /* 자식요소들을 정렬 */
+  /* space-around : 요소마다 일정 간격 조절 후 가운데 정렬 */
+  /* space-between : 좌우 여백없이 간격 조절 후 가운데 정렬 */
+  /* space-evenly : 시작 종료 포함 모든 요소마다 동일 간격 */
+  justify-content: space-evenly;
+
+  /* 자식 요소들을 세로 정렬 */
+  align-items: center;
+}
+
+/* flex 박스에 자식으로 있는 요소는 높이를 설정하지 않으면 부모 크기에 맞춰짐 */
+.child {
+  background: pink;
+  width: 100px;
+  height: 100px;
+}
+
+.parant2 {
+  border: 1px solid red;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child2 {
+  width: 100px;
+  height: 100px;
+  background: skyblue;
+}
+
+.parant3 {
+  border: 1px solid #f00;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  /* 자식들 방향 배치 (기본값 row) */
+  /* row-reverse : 가로 역방향 배치 */
+  /* column : 세로 배치 */
+  /* column-reverse : 세로 역방향 배치 */
+  flex-direction: column;
+}
+
+.child3 {
+  width: 100px;
+  height: 100px;
+  background: pink;
+}
+
+.child3:nth-child(2) {
+  background: #0ff;
+}
+.child3:nth-child(3) {
+  background: #f0f;
+}
+
+.parant4 {
+  height: 600px;
+  border: 1px solid #f00;
+  display: flex;
+  /* 부모크기에 맞춰서 넣을건지 줄바꿈할건지 설정 */
+  /* nowrap(기본값) : 줄 바꿈 안함 -> 자식 크기가 줄어듬 */
+  /* wrap : 줄바꿈 함 */
+  /* flex-wrap: wrap-reverse; */
+
+  /* 배치 방향과 줄 바꿈은 하나의 속성으로 처리가 가능함 */
+  flex-flow: row wrap; 
+
+  /* wrap일 경우 자식들 간격 설정 */
+  align-content: space-around;
+}
+
+.parant4 > div {
+  width: 100px;
+  height: 100px;
+  background: yellowgreen;
+  margin: 5px;
+}

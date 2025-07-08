@@ -1,0 +1,14 @@
+/* 동위 선택자 */
+/* 기준 요소 뒤부터 형제 선택 */
+h1 ~ p {
+  background-color: pink;
+}
+
+/* 기준 요소 뒤부터 가장 가까운 형제 하나 */
+h1 + p {
+  color: red;
+}
+
+input[type="radio"]:checked + label{
+  background-color: blue;
+}

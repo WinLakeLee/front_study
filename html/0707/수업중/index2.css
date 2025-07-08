@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.login-form input:focus {
+  background-color: #aaa;
+}
+
+ul > li{
+  display: inline-block;
+  list-style-type: none;
+  width: 30px;
+  height: auto;
+  text-align: center;
+}
+
+ul > li:hover {
+  background-color: red;
+}
+
+ul > li > a {
+  text-decoration: none;
+}
+
+.container div {
+  display: inline-block;
+  margin: 30px;
+  width: 150px;
+  height: 150px;
+  transition: all 0.5s ease;
+}
+
+.container div:nth-child(1) {
+  background-color: skyblue;
+}
+
+.container div:nth-child(2){
+  background-color: pink;
+}
+
+.container div:nth-child(3){
+  background-color: green;
+}
+
+.container div:nth-child(4){
+  background-color: magenta;
+}
+
+.container div:hover {
+  box-shadow: 2px 2px 10px gray;
+  transform: scale(1.2);
+}

@@ -1,0 +1,108 @@
+.parant {
+  border: 1px solid red;
+  display: flex;
+}
+
+.parant > div {
+  height: 100px;
+  background: skyblue;
+  margin: 5px;
+}
+
+.child1 {
+  /* 증가 비율 */
+  flex-grow: 1;
+  /* 감소 비율 */
+  flex-shrink: 3;
+}
+
+.child2 {
+  flex-grow: 2;
+  flex-shrink: 2;
+}
+
+.child3 {
+  flex-grow: 3;
+  flex-shrink: 1;
+}
+
+.parant2 {
+  border: 1px solid red;
+  height: 500px;
+  display: flex;
+}
+
+.parant2 > div {
+  height: 100px;
+  width: 100px;
+  background: pink;
+  margin: 5px;
+}
+
+/* order는 순서 변경 0부터 시작함 */
+.child4 {
+  /* flex: 1; */
+  /* order: 1; */
+  align-self: center;
+}
+
+.child5 {
+  flex: 1;
+  /* order: 2; */
+}
+
+.child6 {
+  flex: 1;
+  /* order: 0; */
+}
+
+.parant3 {
+  border: 1px solid red;
+  display: flex;
+}
+
+.parant3 > div {
+  width: 100px;
+  height: 100px;
+  background: yellowgreen;
+}
+
+.child7 {
+  margin-right: auto;
+}
+
+.child8 {
+  margin-right: auto;
+}
+
+.parant4 {
+  width: 700px;
+  height: 500px;
+  display: flex;
+  background-color: #ff0;
+}
+
+.middle {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+}
+
+.child {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  background-color: deeppink;
+}
+
+.child > p {
+  font-size: larger;
+  font-weight: bolder;
+}
