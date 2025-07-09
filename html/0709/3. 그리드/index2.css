@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-auto-rows: 320px;
+  gap: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card {
+  background: white;
+  box-shadow: 1px 1px 5px gray;
+  padding: 10px;
+}
+
+.card [class^="image"] {
+  height: 60%;
+  background-size: cover;
+}
+
+.image1 {
+  background-image: url(/static/images/농담곰.png);
+}
+
+.image2 {
+  background-image: url(/static/images/농담곰.png);
+}
+
+.image3 {
+  background-image: url(/static/images/농담곰.png);
+}
+
+.image4 {
+  background-image: url(/static/images/농담곰.png);
+}
+
+.image5 {
+  background-image: url(/static/images/농담곰.png);
+}
+
+.image6 {
+  background-image: url(/static/images/농담곰.png);
+}
+
+.image7 {
+  background-image: url(/static/images/농담곰.png);
+}
+
+.container > div > article {
+  text-align: left;
+  font-size: medium;
+  margin: auto;
+}
+
+@media (max-width: 475px) {
+  .container {
+    grid-template-columns: 300px;
+  }
+}
+
+@media (min-width: 476px) and (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 300px);
+  }
+}
+
+@media (min-width: 1080px) {
+  .container {
+    grid-template-columns: repeat(7, 300px);
+    grid-template-rows: 320px;
+  }
+}

@@ -10,24 +10,31 @@ a {
 }
 
 body {
+  width: 1200px;
   align-items: center;
   margin: auto;
   flex-direction: column;
+  display: flex;
+  overflow: visible;
 }
 
 header {
-  position: fixed;
-  width: 100%;
-  height: 60px;
+  width: 1200px;
   display: flex;
+  align-content: space-around;
+  position: fixed;
+  height: 60px;
   margin: auto;
   background-color: #fff;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .leftmenu {
+  justify-content: center;
   display: flex;
+  margin: auto;
 }
 
 #search input[type="button"] {
@@ -46,7 +53,6 @@ header {
 #logo {
   height: 30px;
   margin: auto;
-  margin-left: 90px;
   align-items: center;
   justify-self: center;
 }
@@ -70,30 +76,45 @@ strong > a{
 }
 
 .rightmenu {
+  margin: auto;
   display: flex;
-  flex-direction: row-reverse;
+  font-size: 15px;
+}
+
+#search {
+  height: 40px;
+  border-radius: 5px;
+  margin: auto 0;
+  padding: 5px;
+  display: flex;
+  font-size: 15px;
+}
+.rightmenu > input[type="text"] {
+  align-content: center;
+  justify-content: center;
 }
 
 #search > input[type="text"] {
-  border: 1px solid lightgray;
+  font-size: 15px;
   width: 250px;
-  height: 30px;
 }
         
-#search > input[type="button"] {
+.rightmenu > input[type="button"] {
+  margin: auto;
   width: 70px;
   height: 35px;
+  border: none;
+  font-weight: bold;
 }
 
 .main {
-  margin: auto;
+  width: 100%;
+  margin-top: 60px;
   background-color: #fbf7f2;
-  overflow: visible;
+  overflow: hidden;
   display: flex;
   align-items: center;
-  padding: 10px;
   justify-content: space-around;
-  width: auto
 }
 
 .main > img {
@@ -107,18 +128,18 @@ strong > a{
 
 .text > h1 {
   font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .main2 {
-  margin: auto;
+  width: 100%;
   overflow: visible;
   display: flex;
   align-items: center;
-  padding: 10px;
   justify-content: space-around;
 }
-
 .main2 > img {
+  margin-right: 10%;
   height: 685px;
   width: 530px;
 }
@@ -153,31 +174,30 @@ footer > table > tbody > tr > td {
     font-size: 14px;
 }
 
-#app > div {
-  display: flex;
-  justify-content: left;
+#app {
+  display: flexbox;
+  justify-content: center;
   align-items: flex-start;
 }
 
-#app > p {
+#app > h5 {
+  justify-content: center;
   font-size: 12px;
-  margin-left: 20px;
-  margin-top: 5px;
-  margin-bottom: 5px;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 
-#app > div > div {
-  display: flex;
+#app > a {
   width: auto;
-  padding: 20px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  text-align: center;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border-radius: 5px;
   margin: 5px;
-  height: 30px;
   font: 16px sans-serif;
   background: rgb(245, 245, 245);
   align-items: center;
   font-weight: 700;
+  margin-left: 0;
 }

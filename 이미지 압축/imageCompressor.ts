@@ -10,7 +10,7 @@
 
 import { z } from "zod";
 import { exifProcessor, isImageExifError } from "./exif";
-import { imageCompressor, isImageCompressionError } from "./imageCompressor";
+import { imageCompressor, isImageCompressionError } from "./preCompressor";
 
 /**
  * 전처리 진행상황 콜백 함수 타입

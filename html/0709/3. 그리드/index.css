@@ -1,0 +1,21 @@
+.container {
+  display: grid;
+
+  /* 고정 길이 */
+  /* grid-template-columns: 200px 200px 200px; */
+  /* 가변 길이 */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* 가변길이와 고정길이 조합 */
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-template-rows: minmax(100px, 300px);
+
+  /* gap은 행렬 한번에 적용 */
+  /* gap : 10px; */
+  row-gap: 10px;
+  column-gap: 20px;
+}
+
+.container > div {
+  background: skyblue;
+  border: 1px solid #f00;
+}
