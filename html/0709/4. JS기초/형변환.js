@@ -29,5 +29,6 @@ console.log(typeof d, d);
 
 let e=Number("          123           ")
 console.log(typeof e, e);
+
 let f=Number("              ");
 console.log(typeof f, f)
