@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="alert-box" id="ab">
+    알림창
+    <button onclick="show('none')">x</button>
+  </div>
+  <button onclick="show('block')">알림창 보기</button>
+
+  <button onclick="message('알림1')">알림창1</button>
+  <button onclick="message('알림2')">알림창2</button>
+  <button onclick="message('알림3')">알림창3</button>
+  
+  <div class="alert"></div>
+  <script src="index.js"></script>
+  <script src="/javascript/jQuery3.7.1.js"></script>
+</body>
+</html>
