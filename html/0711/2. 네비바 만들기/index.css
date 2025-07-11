@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.list-group {
+  display: none;
+}
+
+.show {
+  display: block;
+}
