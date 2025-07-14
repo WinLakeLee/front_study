@@ -35,12 +35,27 @@ cart.forEach((e) => {
     let name = nameTag.innerHTML;
     
     let temp = localStorage.getItem('cart');
+    let isHave = false;
+    let index;
+
     if(temp!=null) {
       temp = JSON.parse(temp);
-      temp.push(name);
+
+      temp.forEach((data, i) => {
+        if(data.name === name) {
+          isHave = true;
+          index = i;
+        }
+      });
+
+      if(isHave) {
+        temp[index].cnt++;
+      } else {
+        temp.push({'name' : name, 'cnt' : 1})
+      }
       localStorage.setItem('cart', JSON.stringify(temp));
     } else {
-      localStorage.setItem('cart', JSON.stringify([name]));
+      localStorage.setItem('cart', JSON.stringify([{'name' : name, 'cnt' : 1}]));
     }
   });
 });

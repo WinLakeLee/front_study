@@ -1,13 +1,21 @@
 const btns = document.querySelectorAll('.tab-button');
 const contents = document.querySelectorAll('.tab-content');
 
-// for(let [index,i] of btns.entries()) {
-//   i.addEventListener('click', () => {
+// for(let i in btns) {
+//   i.addEventListener('click', (i) => {
 //     clean();
 //     i.classList.add('selected');
 //     contents[index].classList.add('show');
 //   });
 // }
+
+for(let [index,i] of btns.entries()) {
+  i.addEventListener('click', () => {
+    clean();
+    i.classList.add('selected');
+    contents[index].classList.add('show');
+  });
+}
 
 const clean = () => {
       btns.forEach((e)=> {
@@ -18,13 +26,13 @@ const clean = () => {
     });
 }
 
-btns.forEach((e, index) => {
-  e.addEventListener('click', () => {
-    clean();
-    e.classList.add('selected');
-    contents[index].classList.add('show');
-  });
-});
+// btns.forEach((e, index) => {
+//   e.addEventListener('click', () => {
+//     clean();
+//     e.classList.add('selected');
+//     contents[index].classList.add('show');
+//   });
+// });
 
 // const btns = $('.tab-button');
 // const contents = $('.tab-content');

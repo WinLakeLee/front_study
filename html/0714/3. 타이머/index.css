@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.alert {
+  width: 600px;
+  height: 200px;
+  padding: 30px;
+  text-align: center;
+  background: pink;
+}
+
+.btn {
+  padding: 3px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}

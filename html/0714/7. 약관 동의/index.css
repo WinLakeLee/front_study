@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.box:first-child {
+  border: 1px solid #000;
+  width: 200px;
+  height: 200px;
+  overflow-y: scroll;
+  margin: auto;
+}
+
+.box:nth-child(2) {
+  border: 1px solid #000;
+  overflow-y: scroll;
+  margin: auto;
+  visibility: hidden;
+}
+
+.container {
+  text-align: center;
+}
+
+#chk:disabled + label{
+  color: lightgray;
+}
+
+.hide {
+  visibility: hidden;
+}

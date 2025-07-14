@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+.carousel {
+  width: 300vw;
+  display: flex;
+  transition: all, 1s ease-out;
+}
+
+.box > img {
+  width: 100%;
+}
+
+button:focus {
+  background: #000;
+  color: white;
+}
+
+.tab {
+  display: flexbox;
+  align-content: space-evenly;
+  text-align: center;
+}
